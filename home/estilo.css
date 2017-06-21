@@ -121,9 +121,12 @@ nav.navbar-transparente {
 }
 
 .albuns {
-	padding: 10px 0px 10px 0px;
+	text-align: center;
 }
 
+.img-responsive{
+	padding-left: 30px;
+}
 
 /*---- Recursos -----*/
 
