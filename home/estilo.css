@@ -13,8 +13,7 @@ html, body, .capa{
 
 
 body{
-	background:
-				linear-gradient(50deg,#33334d,#a3a3c2);
+	background: url('./imagens/back.jpg');
 	background-attachment: fixed;
 	font-family: Helvetica,Arial,sans-serif;
 	overflow-x: hidden;
@@ -23,36 +22,49 @@ body{
 /*---- Barra de Navegação -----*/
 
 .img-logo {
-	font-size: 50px;
-	color: #ebebe0;
+	height: 50px;
+	width:  182px;
+	display: block;
+	background: url('./imagens/logo.jpg') no-repeat;
+	background-size: contain;
+	color: transparent;
 }
 
 
 nav.navbar-transparente {
 	padding: 15px 0px;
-	background: rgba(0, 0, 0, 1);
+	background: rgba(0, 0, 0, 0.6);
 	border: none;
 }
 
 .navbar-brand{
 	padding: 5px 15px;
+	border: none;
+	background: none;
+	text-align: center;
 }
 
 
 .divisor{
 	width: 1px;
 	height: 16px;
-	background: white;
+	background: #d9d9d9;
 	margin: 16px 10px;
 }
 
-.navbar-inverse .navbar-nav>li>a, footer .nav a{
-	color: white;
+.navbar-inverse .navbar-nav>li>button, footer .nav button{
+	padding-top: 15px;
+	color: #d9d9d9;
+	background: none;
+	border: none;
+
 }
 
-.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
+.navbar-inverse .navbar-nav>li>button:hover, footer .nav button:hover{
 	color: #9bf0e1;
 	background: none;
+	border: none;
+
 }
 
 
@@ -62,27 +74,37 @@ nav.navbar-transparente {
 .capa {
 	display: table;
 	width: 100%;
-	height: 100%;
-	text-align: center;
 }
 
 .texto-capa {
 	text-align: center;
-	color: white;
+	color: #d9d9d9;
+	display: table-cell;
+	vertical-align: middle;
+}
+.texto-sobre {
+	background-color: white;
+	text-align: center;
+	color: black;;
+}
+
+.texto-contact {
+	text-align: center;
+	color: #d9d9d9;
 	display: table-cell;
 	vertical-align: middle;
 }
 
 .sobre-home{
 	text-align: center;
-	font-size: 15px;
 	color: black;
+	font-size: 16px;
 }
 
 /*---- BotõesCapa-----*/
 
 .btn-custom{
-	color: white;
+	color: #d9d9d9;
 	border-radius: 500px;
 	-webkit-border-radius: 500px;
 	-moz-border-radius: 500px;
@@ -99,52 +121,56 @@ nav.navbar-transparente {
 
 .btn-roxo:hover{
 	background-color: #6207e3;
-	color: white;
+	color: #d9d9d9;
 }
 
 .btn-branca{
-	border: 2px solid white;
+	border: 2px solid #d9d9d9;
 }
 
 .btn-branca:hover {
-	background-color: white;
+	background-color: #d9d9d9;
 	color: black;
 }
 
 
-
-
-/*---- Seção Serviços-----*/
-
-#servicos {
-	background: white;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.albuns {
+.nome{
 	text-align: center;
+	color: black;
+	border: 2px black solid;
+	border-radius: 10px;
+	width: 500px;
 }
 
-.img-responsive{
-	padding-left: 30px;
+
+.email{
+	text-align: center;
+	color: black;
+	border: 2px black solid;
+	border-radius: 10px;
+	width: 500px;
 }
 
-/*---- Recursos -----*/
-
-#recursos {
-	padding-top: 20PX;
-	padding-bottom: 20PX;
-	color: white;
+.texto{
+	text-align: center;
+	color: black;
+	border: 2px black solid;
+	border-radius: 10px;
+	width: 500px;
+	height: 100px;
+	rows: 100;
 }
 
-.rotacionar{
-	transform: rotate(30deg);
-	-webkit-transform: rotate(30deg);
-	-ms-transform: rotate(30deg);
-	padding-left: 80px;
+.btn-form{
+	background: #d9d9d9;
+	color: black;
+
 }
 
+.btn-form:hover{
+	background-color: #6207e3;
+	color: black;
+}
 
 
 
@@ -159,28 +185,24 @@ footer{
 .item-rede-social{
 	float:right;
 }
+
+.nada{
+	border: none;
+	color: #d9d9d9;
+	text-decoration: none;
+	background: none;
+}
+
+.nada:hover{
+	border: none;
+	color: #9bf0e1;
+	text-decoration: none;
+	background: none;
+}
 /*=================== FIM PAGINA PRINCIPAL =============*/
 
 
 
-/*=================== PREMIUM =============*/
-
-
-
-/*---- capa premium -----*/
-
-
-.capa-premium {
-	display: table;
-	width: 100%;
-}
-
-.texto-capa-premium {
-	text-align: center;
-	color: white;
-	display: table-cell;
-	vertical-align: middle;
-}
 
 
 

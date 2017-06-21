@@ -10,7 +10,7 @@
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="estilo.css" rel="stylesheet">
+    <link href="./estilo.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,22 +40,22 @@
           <span class="icon-bar"></span>
         </button>
 
-          <a href="index.html" class="navbar-brand">
-            <span class="img-logo">Serttyb</span>
-          </a>
+          <button class="navbar-brand" id="home">
+            <span class="img-logo">Anota aí</span>
+          </button>
 
       </div>
 
           <!-- Navbar -->
-      <div class="collapse navbar-collapse" id="barra-navegacao">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href=""> Início </a></li>
-            <li><a href=""> Sobre </a></li>
-            <li><a href=""> Vantagens </a></li>
-             <li class="divisor" role="separator"></li>
-            <li><a href=""> Contato </a></li>
-          </ul>
-      </div>
+          <div class="collapse navbar-collapse" id="barra-navegacao">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href=""> Início </a></li>
+                <li><a href=""> Sobre </a></li>
+                <li><a href=""> Vantagens </a></li>
+                 <li class="divisor" role="separator"></li>
+                <li><a href=""> Contato </a></li>
+              </ul>
+          </div>
 
 
 
@@ -74,47 +74,54 @@
       </div>
     </div>
 
+    <!-- Sobre -->
+      <div class="texto-sobre">
+        <div class="container">
 
-    <!-- Conteũdo -->
-    <section id="servicos">
-      <div class="container">
-          <p class="sobre-home">A SERTTYB Prestação de Serviço de Terceirização é
-            resultado da união de profissionais de administração de
-            empresas e condomínios, segurança preventiva com foco nas áreas
-            empresarial, comercial, condominial, dentre outros, todos com larga experiência e
-            longo tempo de mercado.</p>
-
-
-          <div class="row albuns">
-
-            <div class="col-md-6">
-              <img src="imagens/img1.jpg" class="img-responsive">
-            </div>
-            <div class="col-md-6">
-              <img src="imagens/img2.jpg" class="img-responsive">
-            </div>
-
-          </div><!-- /Row -->
-
-          <p class="sobre-home">Especializada na terceirização de profissionais na área de
-            controle de acesso, vigia noturno, ronda, recepção, zeladoria,
-            limpeza, conservação e manutenção de condomínios e empresas de pequeno,
-            médio e grande porte, oferecendo soluções personalizadas para cada modalidade
-            de serviço dentro do seu segmento. Oferecemos também assessoria em segurança e
-            análise de risco, independentemente da terceirização de seus colaboradores.</p>
+          <div class="row">
+            <div class="col-md-12">
+             <p class="sobre-home">A SERTTYB Prestação de Serviço de Terceirização é
+               resultado da união de profissionais de administração de
+               empresas e condomínios, segurança preventiva com foco nas áreas
+               empresarial, comercial, condominial, dentre outros, todos com larga experiência e
+               longo tempo de mercado.</p>
 
 
-          <div class="row albuns">
+             <div class="row albuns">
 
-            <div class="col-md-6">
-              <img src="imagens/img3.jpg" class="img-responsive">
-            </div>
-            <div class="col-md-6">
-              <img src="imagens/img4.jpg" class="img-responsive">
-            </div>
+               <div class="col-md-6">
+                 <img src="imagens/img1.jpg" class="img-responsive">
+               </div>
+               <div class="col-md-6">
+                 <img src="imagens/img2.jpg" class="img-responsive">
+               </div>
 
-          </div><!-- /Row -->
-    </section><!-- /Section -->
+             </div><!-- /Row -->
+
+             <p class="sobre-home">Especializada na terceirização de profissionais na área de
+               controle de acesso, vigia noturno, ronda, recepção, zeladoria,
+               limpeza, conservação e manutenção de condomínios e empresas de pequeno,
+               médio e grande porte, oferecendo soluções personalizadas para cada modalidade
+               de serviço dentro do seu segmento. Oferecemos também assessoria em segurança e
+               análise de risco, independentemente da terceirização de seus colaboradores.</p>
+
+
+             <div class="row albuns">
+
+               <div class="col-md-6">
+                 <img src="imagens/img3.jpg" class="img-responsive">
+               </div>
+               <div class="col-md-6">
+                 <img src="imagens/img4.jpg" class="img-responsive">
+               </div>
+
+             </div><!-- /Row -->
+
+           </div>
+         </div>
+
+      </div>
+
 
 
     <!-- Rodapé -->
@@ -126,9 +133,29 @@
 
             <!-- Logo -->
           <div class="col-md-2">
-            <span class="img-logo">Serttyb</span>
+            <span class="img-logo">Anota aí</span>
           </div><!-- /Logo -->
 
+
+
+            <!-- Company -->
+         <div class="col-md-2">
+
+         </div> <!-- /Company -->
+
+
+
+            <!-- Comunity -->
+          <div class="col-md-2">
+
+          </div><!-- /Comunity -->
+
+
+
+            <!-- UsefullLinks -->
+          <div class="col-md-2">
+
+          </div><!-- /UsefullLinks -->
 
 
             <!-- SocialMedia -->
@@ -146,10 +173,12 @@
         </div>
     </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- jquery - link cdn -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" rel="stylesheet"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
