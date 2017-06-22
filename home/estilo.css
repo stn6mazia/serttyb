@@ -107,6 +107,12 @@ nav.navbar-transparente {
 	padding-bottom: 35px;
 }
 
+.box-info{
+	text-align: center;
+	position: relative;
+	padding-bottom: 35px;
+}
+
 /*---- BotõesCapa-----*/
 
 .btn-custom{
@@ -179,9 +185,7 @@ nav.navbar-transparente {
 }
 
 
-.box-info{
-	text-align: center;
-}
+
 
 /*---- rodape -----*/
 
