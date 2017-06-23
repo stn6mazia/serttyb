@@ -21,6 +21,9 @@ body{
 	overflow-x: hidden;
 }
 
+.show {display:block;}
+
+
 /*---- Barra de Navegação -----*/
 
 .img-logo {
