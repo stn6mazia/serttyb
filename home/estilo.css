@@ -75,7 +75,6 @@ nav.navbar-transparente {
 
 .capa {
 	text-align: center;
-	display: table;
 	width: 100%;
 	height: 100%;
 }
@@ -95,7 +94,6 @@ nav.navbar-transparente {
 .texto-contact {
 	text-align: center;
 	color: #d9d9d9;
-	display: table-cell;
 	vertical-align: middle;
 }
 
@@ -109,7 +107,6 @@ nav.navbar-transparente {
 
 .box-info{
 	text-align: center;
-	position: relative;
 	padding-bottom: 35px;
 }
 
