@@ -82,10 +82,9 @@ nav.navbar-transparente {
 
 .texto-capa {
 	text-align: center;
-	color: #d9d9d9;
-	vertical-align: middle;
-	padding-top: 300px;
+	color: white;
 }
+
 .texto-sobre {
 	background-color: white;
 	text-align: center;
@@ -99,11 +98,30 @@ nav.navbar-transparente {
 	vertical-align: middle;
 }
 
+.capa-home{
+	text-align: center;
+	color: white;
+	padding-top: 200px;
+}
+
+.capa-baixo-home{
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
 .sobre-home{
 	text-align: center;
 	color: black;
 	font-size: 16px;
 	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.box-capa{
+	text-align: center;
+	position: relative;
 	padding-bottom: 35px;
 }
 
