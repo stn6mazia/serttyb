@@ -14,7 +14,7 @@ html, body, .capa{
 
 
 body{
-	background: url('./imagens/back.jpg');
+	background: url('../imagens/back.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	font-family: Helvetica,Arial,sans-serif;
@@ -27,7 +27,7 @@ body{
 	height: 50px;
 	width:  182px;
 	display: block;
-	background: url('./imagens/logo.jpg') no-repeat;
+	background: url('../imagens/logo.jpg') no-repeat;
 	background-size: contain;
 	color: transparent;
 }
@@ -106,7 +106,7 @@ nav.navbar-transparente {
 	text-align: center;
 	color: white;
 	padding-top: 30px;
-	padding-bottom: 100px;
+	padding-bottom: 200px;
 }
 
 .sobre-home{
