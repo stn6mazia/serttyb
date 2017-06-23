@@ -137,6 +137,14 @@ nav.navbar-transparente {
 	padding-top: 35px;
 }
 
+
+.box-back{
+	background: url('../imagens/sobre.jpg') no-repeat;
+	width: 1030px;
+	height: 720px;
+	
+}
+
 /*---- BotõesCapa-----*/
 
 .btn-custom{
