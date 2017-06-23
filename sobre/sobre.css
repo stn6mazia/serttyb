@@ -87,7 +87,7 @@ nav.navbar-transparente {
 .texto-sobre {
 	background-color: white;
 	text-align: center;
-	color: black;;
+	color: black;
 }
 
 .texto-contact {
@@ -126,6 +126,12 @@ nav.navbar-transparente {
 .box-info{
 	text-align: center;
 	padding-bottom: 35px;
+}
+
+.albuns-sobre{
+	text-align: center;
+	padding-left: 60px;
+	padding-top: 35px;
 }
 
 /*---- BotõesCapa-----*/
