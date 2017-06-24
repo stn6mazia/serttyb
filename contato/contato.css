@@ -9,7 +9,6 @@
 
 html, body, .capa{
 	height: 100%;
-	width: 100%;
 }
 
 
@@ -22,7 +21,6 @@ body{
 }
 
 .show {display:block;}
-
 
 /*---- Barra de Navegação -----*/
 
@@ -90,7 +88,7 @@ nav.navbar-transparente {
 .texto-sobre {
 	background-color: white;
 	text-align: center;
-	color: black;
+	color: black;;
 }
 
 .texto-contact {
@@ -131,31 +129,14 @@ nav.navbar-transparente {
 	padding-bottom: 35px;
 }
 
-.albuns-sobre{
-	text-align: center;
-	padding-left: 60px;
-	padding-top: 35px;
+
+.inputs{
+	width: 300px;
 }
 
 
-.box-back{
-	text-align: center;
-
-}
-
-.lista{
-	text-align: center;
-}
-
-.box1{
-	background-color: #f5f5f0;
-	border-right-style: solid;
-	border-right-color: black;
-	border-right-width: 2px;
-}
-
-.box2{
-	background-color: #f5f5f0;
+.box_form{
+	background-color:
 }
 
 /*---- BotõesCapa-----*/
@@ -257,46 +238,14 @@ footer{
 	text-decoration: none;
 	background: none;
 }
-/*=================== imagens =============*/
+/*=================== FIM PAGINA PRINCIPAL =============*/
 
 
-.escudo{
-	height: 7%;
-	width: 7%;
-}
-
-.grupo{
-	height: 14%;
-	width: 14%;
-}
-
-.grafico{
-	height: 7%;
-	width: 7%;
-}
-
-.acesso{
-	height: 7%;
-	width: 7%;
-}
 
 
-.ronda{
-	height: 14%;
-	width: 14%;
-}
 
 
-.seguranca{
-	height: 10%;
-	width: 10%;
-}
 
-
-.swot{
-	height: 10%;
-	width: 10%;
-}
 
 /*=================== Tipográfia =============*/
 
@@ -322,16 +271,9 @@ h3 {
 }
 
 h4{
-	color: #000333;
-	font-size: 26px;
+	color: #black;
+	font-size: 12px;
 	text-transform:uppercase;
-	font-family: monospace;
-}
-
-.texto-sobre h3{
-	color: black;
-	font-size: 16px;
-	text-transform: uppercase;
 }
 
 #servicos h2, #servicos h3 {
@@ -340,3 +282,4 @@ h4{
 
 #recursos h3 {
 	color: #9bf0e1;
+}
