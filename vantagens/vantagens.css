@@ -139,10 +139,23 @@ nav.navbar-transparente {
 
 
 .box-back{
-	background: url('../imagens/sobre.jpg') no-repeat;
-	width: 1030px;
-	height: 720px;
+	text-align: center;
 
+}
+
+.lista{
+	text-align: center;
+}
+
+.box1{
+	background-color: #f5f5f0;
+	border-right-style: solid;
+	border-right-color: black;
+	border-right-width: 2px;
+}
+
+.box2{
+	background-color: #f5f5f0;
 }
 
 /*---- BotõesCapa-----*/
@@ -244,14 +257,46 @@ footer{
 	text-decoration: none;
 	background: none;
 }
-/*=================== FIM PAGINA PRINCIPAL =============*/
+/*=================== imagens =============*/
 
 
+.escudo{
+	height: 7%;
+	width: 7%;
+}
+
+.grupo{
+	height: 14%;
+	width: 14%;
+}
+
+.grafico{
+	height: 7%;
+	width: 7%;
+}
+
+.acesso{
+	height: 7%;
+	width: 7%;
+}
 
 
+.ronda{
+	height: 14%;
+	width: 14%;
+}
 
 
+.seguranca{
+	height: 10%;
+	width: 10%;
+}
 
+
+.swot{
+	height: 10%;
+	width: 10%;
+}
 
 /*=================== Tipográfia =============*/
 
@@ -277,9 +322,16 @@ h3 {
 }
 
 h4{
-	color: #919496;
-	font-size: 12px;
+	color: #000333;
+	font-size: 26px;
 	text-transform:uppercase;
+	font-family: monospace;
+}
+
+.texto-sobre h3{
+	color: black;
+	font-size: 16px;
+	text-transform: uppercase;
 }
 
 #servicos h2, #servicos h3 {
