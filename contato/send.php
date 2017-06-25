@@ -1,34 +1,62 @@
-`<?php
-require './PHPMailer-master/PHPMailerAutoload.php';
-header('Content-Type: application/json');
-$name = $_POST['name'];
-$mail = $_POST['email'];
-$message = $_POST['mssg'];
-$telefone = $_POST['telefone'];
-
-$mail = new PHPMailer;
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'http://www.serttyb.com.br/';  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'contato@serttyb.com.br';                 // SMTP username
-$mail->Password = 'contato2016';                           // SMTP password
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 993;                                    // TCP port to connect to
-
-$mail->setFrom($_POST['email'], $_POST['fname']);
-// Add a recipient
-$mail->addAddress('contato@serttyb.com.br');               // Name is optional
+<?php
 
 
-$mail->isHTML(true);                                  // Set email format to HTML
+/*** INÍCIO - DADOS A SEREM ALTERADOS DE ACORDO COM SUAS CONFIGURAÇÕES DE E-MAIL ***/
 
-$mail->Subject = "Contato Site Serttyb";
-$mail->Body    = "Nome: $name - Phone $telefone";
-$mail->AltBody = $message;
-if(!$mail->send()) {
-echo 'Message could not be sent.';
-         echo 'Mailer Error: ' . $mail->ErrorInfo;
-    } else {
-    echo 'Message has been sent';
-    }
-    ?>`
+$enviaFormularioParaNome = 'Contato';
+$enviaFormularioParaEmail = 'contato@serttyb.com.br';
+
+$caixaPostalServidorNome = 'http://www.serttyb.com.br/ | Contato';
+$caixaPostalServidorEmail = 'contato@serttyb.com.br';
+$caixaPostalServidorSenha = 'contato2016';
+
+/*** FIM - DADOS A SEREM ALTERADOS DE ACORDO COM SUAS CONFIGURAÇÕES DE E-MAIL ***/
+
+
+/* abaixo as veriaveis principais, que devem conter em seu formulario*/
+
+$remetenteNome  = $_POST['name'];
+$remetenteEmail = $_POST['email'];
+$telefone  = $_POST['telefone'];
+$mensagem = $_POST['mssg'];
+
+$mensagemConcatenada = 'Formulário gerado via website'.'<br/>';
+$mensagemConcatenada .= '-------------------------------<br/><br/>';
+$mensagemConcatenada .= 'Nome: '.$remetenteNome.'<br/>';
+$mensagemConcatenada .= 'E-mail: '.$remetenteEmail.'<br/>';
+$mensagemConcatenada .= 'Telefone: '.$telefone.'<br/>';
+$mensagemConcatenada .= '-------------------------------<br/><br/>';
+$mensagemConcatenada .= 'Mensagem: "'.$mensagem.'"<br/>';
+
+
+/*********************************** A PARTIR DAQUI NAO ALTERAR ************************************/
+
+require_once('./PHPMailer-master/PHPMailerAutoload.php');
+
+$mail = new PHPMailer();
+
+$mail->IsSMTP();
+$mail->SMTPAuth  = true;
+$mail->Charset   = 'utf8_decode()';
+$mail->Host  = 'smtp.'.substr(strstr($caixaPostalServidorEmail, '@'), 1);
+$mail->Port  = '587';
+$mail->Username  = $caixaPostalServidorEmail;
+$mail->Password  = $caixaPostalServidorSenha;
+$mail->From  = $caixaPostalServidorEmail;
+$mail->FromName  = utf8_decode($caixaPostalServidorNome);
+$mail->IsHTML(true);
+$mail->Subject  = utf8_decode($assunto);
+$mail->Body  = utf8_decode($mensagemConcatenada);
+
+
+$mail->AddAddress($enviaFormularioParaEmail,utf8_decode($enviaFormularioParaNome));
+
+if(!$mail->Send()){
+$mensagemRetorno = 'Erro ao enviar formulário: '. print($mail->ErrorInfo);
+}else{
+$mensagemRetorno = 'Formulário enviado com sucesso!';
+}
+
+
+}
+?>
